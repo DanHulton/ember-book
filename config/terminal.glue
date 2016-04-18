@@ -1,0 +1,15 @@
+█ [ /Users/dhulton/dev/rarwe/config ] path
+/bin/sh: path: No such file or directory
+
+█ [ /Users/dhulton/dev/rarwe/config ] echo $PATH
+
+
+█ [ /Users/dhulton/dev/rarwe/config ] echo $SHELL
+/bin/bash
+
+█ [ /Users/dhulton/dev/rarwe/config ] whoami
+/bin/sh: whoami: No such file or directory
+
+█ [ /Users/dhulton/dev/rarwe/config ] /usr/bin/whoami
+dhulton
+
