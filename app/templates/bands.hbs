@@ -1,7 +1,7 @@
 <!-- app/templates/bands.hbs -->
 <div class="col-md-4">
 	<div class="list-group">
-		{{#each model as |band|}}
+		{{#each model.sortedContent as |band|}}
 			{{#link-to "bands.band.songs" band class="list-group-item band-link"}}
 				{{band.name}}
 				<span class="pointer glyphicon glyphicon-cheveron-right"></span>
