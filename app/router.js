@@ -2,12 +2,15 @@ import Ember from 'ember';
 import config from './config/environment';
 
 const Router = Ember.Router.extend({
-  location: config.locationType
+  	location: config.locationType
 });
 
 Router.map(function() {
-  this.route('bands');
-  this.route('songs');
+  	this.route('bands', function() {
+      	this.route('band', { path: ':slug' }, function() {
+            this.route('songs');
+      	});
+    });
 });
 
 export default Router;
