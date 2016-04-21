@@ -39,9 +39,20 @@ let walk = Song.create({
 
 // Bands
 
-var ledZeppelin = Band.create({ name: 'Led Zeppelin', songs: [blackDog] });
-var pearlJam    = Band.create({ name: 'Pearl Jam', songs: [yellowLedbetter] });
-var fooFighters = Band.create({ name: 'Foo Fighters', songs: [pretender, walk] });
+var ledZeppelin = Band.create({
+	name: 'Led Zeppelin',
+	songs: [blackDog],
+});
+var pearlJam    = Band.create({
+	name: 'Pearl Jam',
+	songs: [yellowLedbetter],
+	description: 'Pearl Jam is an American rock band, formed in Seattle, Washington in 1990.',
+});
+var fooFighters = Band.create({
+	name: 'Foo Fighters',
+	songs: [pretender, walk],
+	description: 'THE BEST THE BEST THE BEST THE BEST THE BEST THE BEST THE BEST',
+});
 
 var bands = BandsCollection.create();
 bands.get('content').pushObjects([ledZeppelin, pearlJam, fooFighters]);

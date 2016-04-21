@@ -2,6 +2,7 @@ import Ember from 'ember';
 
 var Band = Ember.Object.extend({
 	name: '',
+	description: '',
 
 	slug: Ember.computed('name', function() {
 		return this.get('name').dasherize();
